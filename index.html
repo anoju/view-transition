@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://anoju.github.io/kyobo-mydata-pub/front/css/front.min.css" />
+    <style>
+      .table td {
+        word-break: break-all;
+      }
+      .button {
+        white-space: nowrap;
+      }
+    </style>
   </head>
   <body>
     <div id="wrap">
@@ -142,7 +150,7 @@
           const $this = $(this);
           const $html = $this.text();
           $this.wrapInner('<a href="./' + $html + '/" target="_blank" class="a-link"></a>');
-          const $after = '<td class="t-center"><a href="https://simple-set-demos.glitch.me/' + $html + '/" target="_blank" class="button line h24">원본보기</a></td></td><td class="t-center"><a href="https://github.com/anoju/htmlUI/tree/master/view-transition/' + $html + '" target="_blank" class="button line h24">소스보기</a></td></td>';
+          const $after = '<td class="t-center"><a href="https://simple-set-demos.glitch.me/' + $html + '/" target="_blank" class="button line h24">원본보기</a></td></td><td class="t-center"><a href="https://github.com/anoju/view-transition/tree/main/' + $html + '" target="_blank" class="button line h24">소스보기</a></td></td>';
           $this.after($after);
         });
       }
