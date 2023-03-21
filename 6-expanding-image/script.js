@@ -1,7 +1,7 @@
 import { getPageContent, onLinkNavigate, transitionHelper, getLink } from '../utils.js';
 
-let galleryPath = '/view-transition/6-expanding-image/';
-if (location.host === 'anoju.github.io') galleryPath = '/htmlUI' + galleryPath;
+let galleryPath = '/6-expanding-image/';
+if (location.host === 'anoju.github.io') galleryPath = '/view-transition' + galleryPath;
 const catsPath = `${galleryPath}cats/`;
 
 function getNavigationType(fromPath, toPath) {
